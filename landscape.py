@@ -7,7 +7,6 @@ byfile = st.Page(
      page="byfile.py",
      title="Versi 2",
      icon="📁",
-
 )
 
 discount = st.Page(
@@ -22,22 +21,22 @@ bylist = st.Page(
      icon="📃",
      default=True,
 )
+
 salessuport = st.Page(
      page="salessupport.py",
      title="Sales Support",
      icon="📈",
 )
 
+TasKarung = st.Page(
+     page="Tas&Karung.py",
+     title="Versi Tas&Karung",
+     icon="📁",
+)
 
 pg = st.navigation({
-    "Choose": [bylist, byfile, salessuport, discount],
+    "Choose": [bylist, byfile, salessuport, discount, TasKarung],
 
 })
 
-
-
-
 pg.run()
-
-
-
